@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222222;
+    line-height: 1.5;
+    background: #ffffff;
+}
+
+.cabecalho {
+    background: #0d0d2b;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.cabecalho-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-logo {
+    font-size: 1.3rem;
+}
+
+.menu-lista {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+}
+
+.menu-lista a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.menu-lista a:hover {
+    color: #7c5cff;
+}
+
+.banner {
+    background: #ffffff;
+    padding: 2.5rem 0;
+    border-bottom: 1px solid #222222;
+}
+
+.banner-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.banner-texto {
+    flex: 1;
+}
+
+.banner-texto h2 {
+    font-size: 2rem;
+    color: #0d0d2b;
+    margin-bottom: 0.5rem;
+}
+
+.banner-imagem {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 0.5rem;
+}
+
+.botao {
+    display: inline-block;
+    background: #7c5cff;
+    color: #ffffff;
+    padding: 0.6em 1.2em;
+    border-radius: 2em;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.8rem;
+}
+
+.sobre,
+.depoimentos {
+    padding: 2.5rem 0;
+}
+
+.sobre-container,
+.depoimentos-container,
+.servicos-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sobre h2,
+.servicos h2,
+.depoimentos h2,
+.contato h2 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    color: #0d0d2b;
+}
+
+.servicos,
+.contato {
+    background: #ffffff;
+    padding: 2.5rem 0;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.servicos-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.servico-card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #0d0d2b;
+}
+
+.depoimentos-lista {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.depoimento {
+    flex: 1;
+    background: #ffffff;
+    border-left: 4px solid #7c5cff;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    max-width: 400px;
+    border-top: 1px solid #0d0d2b;
+    border-right: 1px solid #0d0d2b;
+    border-bottom: 1px solid #0d0d2b;
+}
+
+.depoimento cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.contato-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.contato-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.contato-formulario input,
+.contato-formulario textarea {
+    padding: 0.6rem;
+    border: 1px solid #0d0d2b;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+.rodape {
+    background: #0d0d2b;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+    .banner-container,
+    .contato-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .banner-container {
+        text-align: center;
+    }
+
+    .servicos-lista {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .depoimentos-lista {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho-container {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .menu-lista {
+        gap: 0.8rem;
+    }
+
+    .servicos-lista {
+        grid-template-columns: 1fr;
+    }
+}

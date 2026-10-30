@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-container">
+            <h1 class="cabecalho-logo">Criativa Web</h1>
+            <nav class="cabecalho-nav">
+                <ul class="menu-lista">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="banner">
+            <div class="banner-container">
+                <div class="banner-texto">
+                    <h2>Design que conecta</h2>
+                    <p>Agência digital com foco em sites responsivos, modernos e rápidos.</p>
+                    <a href="#contato" class="botao">Orçamento</a>
+                </div>
+                <img class="banner-imagem"
+                    src="https://picsum.photos/seed/agencia/500/320"
+                    srcset="https://picsum.photos/seed/agencia/300/200 300w,
+                            https://picsum.photos/seed/agencia/500/320 500w"
+                    sizes="(max-width: 600px) 90vw, 40vw"
+                    alt="Agência">
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="sobre-container">
+                <h2>Sobre Nós</h2>
+                <p>Somos uma agência de design digital. Criamos identidades visuais e sites que se adaptam a qualquer tela com Flexbox e Grid.</p>
+            </div>
+        </section>
+
+        <section id="servicos" class="servicos">
+            <div class="servicos-container">
+                <h2>Serviços</h2>
+                <div class="servicos-lista">
+                    <div class="servico-card">
+                        <h3>Design Responsivo</h3>
+                        <p>Flexbox e Grid com unidades relativas.</p>
+                    </div>
+                    <div class="servico-card">
+                        <h3>Identidade Visual</h3>
+                        <p>Marca e paleta consistente.</p>
+                    </div>
+                    <div class="servico-card">
+                        <h3>Front-end</h3>
+                        <p>HTML5 semântico e CSS moderno.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="depoimentos" class="depoimentos">
+            <div class="depoimentos-container">
+                <h2>Depoimentos</h2>
+                <div class="depoimentos-lista">
+                    <blockquote class="depoimento">
+                        "Site lindo e funciona no celular!"
+                        <cite>— Marina S.</cite>
+                    </blockquote>
+                    <blockquote class="depoimento">
+                        "Aumentou nosso tráfego mobile."
+                        <cite>— João P.</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="contato-container">
+                <div class="contato-info">
+                    <h2>Contato</h2>
+                    <p>Rua Criativa, 123 - SP<br>(11) 99999-0000<br>contato@criativaweb.com</p>
+                </div>
+                <form class="contato-formulario">
+                    <input type="text" placeholder="Nome" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <textarea placeholder="Mensagem" rows="3" required></textarea>
+                    <button type="submit" class="botao">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 Agência Criativa Web</p>
+    </footer>
+</body>
+</html>

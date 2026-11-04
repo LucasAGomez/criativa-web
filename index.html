@@ -8,14 +8,14 @@
 </head>
 <body>
     <header class="cabecalho">
-        <div class="cabecalho-container">
-            <h1 class="cabecalho-logo">Criativa Web</h1>
-            <nav class="cabecalho-nav">
-                <ul class="menu-lista">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato">Contato</a></li>
+        <div class="cabecalho__container">
+            <h1 class="cabecalho__logo">Criativa Web</h1>
+            <nav class="cabecalho__nav">
+                <ul class="cabecalho__lista">
+                    <li class="cabecalho__item"><a class="cabecalho__link" href="#home">Home</a></li>
+                    <li class="cabecalho__item"><a class="cabecalho__link" href="#sobre">Sobre</a></li>
+                    <li class="cabecalho__item"><a class="cabecalho__link" href="#servicos">Serviços</a></li>
+                    <li class="cabecalho__item"><a class="cabecalho__link" href="#contato">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -23,13 +23,13 @@
 
     <main>
         <section id="home" class="banner">
-            <div class="banner-container">
-                <div class="banner-texto">
-                    <h2>Design que conecta</h2>
-                    <p>Agência digital com foco em sites responsivos, modernos e rápidos.</p>
-                    <a href="#contato" class="botao">Orçamento</a>
+            <div class="banner__container">
+                <div class="banner__conteudo">
+                    <h2 class="banner__titulo">Design que conecta</h2>
+                    <p class="banner__texto">Agência digital com foco em sites responsivos, modernos e rápidos.</p>
+                    <a href="#contato" class="botao botao--primario">Orçamento</a>
                 </div>
-                <img class="banner-imagem"
+                <img class="banner__imagem"
                     src="https://picsum.photos/seed/agencia/500/320"
                     srcset="https://picsum.photos/seed/agencia/300/200 300w,
                             https://picsum.photos/seed/agencia/500/320 500w"
@@ -39,66 +39,66 @@
         </section>
 
         <section id="sobre" class="sobre">
-            <div class="sobre-container">
-                <h2>Sobre Nós</h2>
-                <p>Somos uma agência de design digital. Criamos identidades visuais e sites que se adaptam a qualquer tela com Flexbox e Grid.</p>
+            <div class="sobre__container">
+                <h2 class="sobre__titulo">Sobre Nós</h2>
+                <p class="sobre__texto">Somos uma agência de design digital. Criamos identidades visuais e sites que se adaptam a qualquer tela com Flexbox e Grid.</p>
             </div>
         </section>
 
-        <section id="servicos" class="servicos">
-            <div class="servicos-container">
-                <h2>Serviços</h2>
-                <div class="servicos-lista">
-                    <div class="servico-card">
-                        <h3>Design Responsivo</h3>
-                        <p>Flexbox e Grid com unidades relativas.</p>
+        <section id="servicos" class="servicos servicos--borda">
+            <div class="servicos__container">
+                <h2 class="servicos__titulo">Serviços</h2>
+                <div class="servicos__lista">
+                    <div class="card">
+                        <h3 class="card__titulo">Design Responsivo</h3>
+                        <p class="card__texto">Flexbox e Grid com unidades relativas.</p>
                     </div>
-                    <div class="servico-card">
-                        <h3>Identidade Visual</h3>
-                        <p>Marca e paleta consistente.</p>
+                    <div class="card">
+                        <h3 class="card__titulo">Identidade Visual</h3>
+                        <p class="card__texto">Marca e paleta consistente.</p>
                     </div>
-                    <div class="servico-card">
-                        <h3>Front-end</h3>
-                        <p>HTML5 semântico e CSS moderno.</p>
+                    <div class="card">
+                        <h3 class="card__titulo">Front-end</h3>
+                        <p class="card__texto">HTML5 semântico e CSS moderno.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="depoimentos" class="depoimentos">
-            <div class="depoimentos-container">
-                <h2>Depoimentos</h2>
-                <div class="depoimentos-lista">
+            <div class="depoimentos__container">
+                <h2 class="depoimentos__titulo">Depoimentos</h2>
+                <div class="depoimentos__lista">
                     <blockquote class="depoimento">
-                        "Site lindo e funciona no celular!"
-                        <cite>— Marina S.</cite>
+                        <p class="depoimento__texto">"Site lindo e funciona no celular!"</p>
+                        <cite class="depoimento__autor">— Marina S.</cite>
                     </blockquote>
                     <blockquote class="depoimento">
-                        "Aumentou nosso tráfego mobile."
-                        <cite>— João P.</cite>
+                        <p class="depoimento__texto">"Aumentou nosso tráfego mobile."</p>
+                        <cite class="depoimento__autor">— João P.</cite>
                     </blockquote>
                 </div>
             </div>
         </section>
 
-        <section id="contato" class="contato">
-            <div class="contato-container">
-                <div class="contato-info">
-                    <h2>Contato</h2>
-                    <p>Rua Criativa, 123 - SP<br>(11) 99999-0000<br>contato@criativaweb.com</p>
+        <section id="contato" class="contato contato--borda">
+            <div class="contato__container">
+                <div class="contato__info">
+                    <h2 class="contato__titulo">Contato</h2>
+                    <p class="contato__texto">Rua Criativa, 123 - SP<br>(11) 99999-0000<br>contato@criativaweb.com</p>
                 </div>
-                <form class="contato-formulario">
-                    <input type="text" placeholder="Nome" required>
-                    <input type="email" placeholder="E-mail" required>
-                    <textarea placeholder="Mensagem" rows="3" required></textarea>
-                    <button type="submit" class="botao">Enviar</button>
+                <form class="form">
+                    <input class="form__input" type="text" placeholder="Nome" required>
+                    <input class="form__input" type="email" placeholder="E-mail" required>
+                    <textarea class="form__textarea" placeholder="Mensagem" rows="3" required></textarea>
+                    <button type="submit" class="botao botao--primario">Enviar</button>
                 </form>
             </div>
         </section>
     </main>
 
     <footer class="rodape">
-        <p>© 2026 Agência Criativa Web</p>
+        <p class="rodape__texto">© 2026 Agência Criativa Web</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,14 @@
+@use 'variaveis' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fonte-principal;
+    color: $cor-texto;
+    line-height: 1.5;
+    background: $cor-branco;
+}

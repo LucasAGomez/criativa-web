@@ -1,0 +1,160 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.cabecalho {
+    background: $cor-escura;
+    color: $cor-branco;
+    padding: $esp-p 0;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font-size: 1.3rem;
+    }
+
+    &__lista {
+        display: flex;
+        gap: 1.2rem;
+        list-style: none;
+    }
+
+    &__link {
+        color: $cor-branco;
+        text-decoration: none;
+        font-size: 0.9rem;
+
+        &:hover {
+            color: $cor-destaque;
+        }
+    }
+}
+
+.banner {
+    background: $cor-branco;
+    padding: $esp-g 0;
+    border-bottom: 1px solid $cor-texto;
+
+    &__container {
+        @include container;
+        display: flex;
+        align-items: center;
+        gap: $esp-m;
+    }
+
+    &__conteudo {
+        flex: 1;
+    }
+
+    &__titulo {
+        font-size: 2rem;
+        color: $cor-escura;
+        margin-bottom: $esp-p * 0.5;
+    }
+
+    &__imagem {
+        width: 100%;
+        max-width: 400px;
+        border-radius: 0.5rem;
+    }
+}
+
+.sobre,
+.depoimentos {
+    padding: $esp-g 0;
+}
+
+.sobre__container,
+.depoimentos__container,
+.servicos__container {
+    @include container;
+}
+
+.sobre__titulo,
+.servicos__titulo,
+.depoimentos__titulo,
+.contato__titulo {
+    @include titulo-secao;
+}
+
+.servicos,
+.contato {
+    background: $cor-branco;
+    padding: $esp-g 0;
+
+    &--borda {
+        border-top: 1px solid $cor-texto;
+        border-bottom: 1px solid $cor-texto;
+    }
+}
+
+.servicos__lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $esp-p;
+}
+
+.depoimentos__lista {
+    display: flex;
+    gap: $esp-p;
+    justify-content: center;
+}
+
+.contato__container {
+    text-align: center;
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $esp-m;
+}
+
+.rodape {
+    background: $cor-escura;
+    color: $cor-branco;
+    text-align: center;
+    padding: $esp-p;
+
+    &__texto {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .banner__container,
+    .contato__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .banner__container {
+        text-align: center;
+    }
+
+    .servicos__lista {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .depoimentos__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho__container {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    .cabecalho__lista {
+        gap: 0.8rem;
+    }
+
+    .servicos__lista {
+        grid-template-columns: 1fr;
+    }
+}

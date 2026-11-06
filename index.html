@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Criativa Web</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -37,7 +37,6 @@
                     alt="Agência">
             </div>
         </section>
-
         <section id="sobre" class="sobre">
             <div class="sobre__container">
                 <h2 class="sobre__titulo">Sobre Nós</h2>
@@ -85,12 +84,19 @@
             <div class="contato__container">
                 <div class="contato__info">
                     <h2 class="contato__titulo">Contato</h2>
-                    <p class="contato__texto">Rua Criativa, 123 - SP<br>(11) 99999-0000<br>contato@criativaweb.com</p>
+                    <p class="contato__texto">
+                        Rua Criativa, 123 - SP<br>
+                        (11) 99999-0000<br>
+                        contato@criativaweb.com
+                    </p>
                 </div>
                 <form class="form">
-                    <input class="form__input" type="text" placeholder="Nome" required>
-                    <input class="form__input" type="email" placeholder="E-mail" required>
-                    <textarea class="form__textarea" placeholder="Mensagem" rows="3" required></textarea>
+                    <label for="nome"></label>
+                    <input class="form__input" type="text" id="nome" placeholder="Nome" required>
+                    <label for="email"></label>
+                    <input class="form__input" type="email" id="email" placeholder="E-mail" required>
+                    <label for="mensagem"></label>
+                    <textarea class="form__textarea" id="mensagem" placeholder="Mensagem" rows="3" required></textarea>
                     <button type="submit" class="botao botao--primario">Enviar</button>
                 </form>
             </div>
@@ -98,7 +104,7 @@
     </main>
 
     <footer class="rodape">
-        <p class="rodape__texto">© 2026 Agência Criativa Web</p>
+        <p class="rodape__texto">&copy; 2026 Agência Criativa Web</p>
     </footer>
 </body>
 </html>
